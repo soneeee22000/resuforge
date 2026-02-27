@@ -17,7 +17,7 @@ Thank you for considering contributing! ResuForge is open-source and built colla
 ## Getting Started
 
 ```bash
-git clone https://github.com/yourusername/resuforge
+git clone https://github.com/soneeee22000/resuforge
 cd resuforge
 pip install -e ".[dev]"
 cp .env.example .env  # Add your API key
@@ -29,12 +29,14 @@ pytest tests/unit/    # Run fast tests
 ## Development Guidelines
 
 ### Code Style
+
 - Black for formatting (`black .`)
 - Ruff for linting (`ruff check .`)
 - Type hints everywhere — Pydantic models for all data structures
 - No inline prompts — all prompts go in `prompts.py` files
 
 ### Commit Convention
+
 ```
 feat: add URL JD ingestion
 fix: handle custom LaTeX commands in parser
@@ -43,6 +45,7 @@ docs: update architecture for v0.2
 ```
 
 ### PR Guidelines
+
 - One feature or fix per PR
 - Include tests for new functionality
 - Update relevant docs if changing behavior

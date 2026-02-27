@@ -20,9 +20,11 @@ Built for engineers, researchers, and anyone who uses LaTeX and is tired of manu
 
 ## Quickstart
 
+> **Note:** ResuForge is in active development. The pipeline modules are being implemented. The quickstart below reflects the target v0.1 CLI.
+
 ```bash
-# Install
-pip install resuforge
+# Install from source
+pip install -e ".[dev]"
 
 # Tailor your resume to a JD
 resuforge tailor --resume my_resume.tex --jd job_description.txt --output tailored_resume.tex
@@ -35,28 +37,33 @@ resuforge tailor --resume my_resume.tex --jd job_description.txt --cover-letter 
 
 ## Features
 
-| Feature | Status |
-|---|---|
-| JD ingestion (text / URL / PDF) | ✅ v0.1 |
-| LaTeX resume parsing | ✅ v0.1 |
-| Keyword & skill extraction from JD | ✅ v0.1 |
-| Targeted resume section editing | ✅ v0.1 |
-| Grounded cover letter generation | ✅ v0.1 |
-| Diff view (original vs tailored) | 🔜 v0.2 |
-| Profile management (multiple resumes) | 🔜 v0.2 |
-| Web UI | 🔜 v0.3 |
-| ATS score estimation | 🔜 v0.4 |
+| Feature                               | Status             |
+| ------------------------------------- | ------------------ |
+| Project scaffold + IR schema          | Done               |
+| JD ingestion (text / PDF)             | In Progress (v0.1) |
+| LaTeX resume parsing                  | In Progress (v0.1) |
+| Keyword & skill extraction from JD    | In Progress (v0.1) |
+| Targeted resume section editing       | In Progress (v0.1) |
+| Grounded cover letter generation      | In Progress (v0.1) |
+| Diff view (original vs tailored)      | Planned (v0.2)     |
+| Profile management (multiple resumes) | Planned (v0.2)     |
+| Web UI                                | Planned (v0.3)     |
+| ATS score estimation                  | Planned (v0.4)     |
 
 ---
 
 ## Installation
 
 ### Requirements
+
 - Python 3.10+
 - An Anthropic or OpenAI API key (configurable)
 
 ```bash
-pip install resuforge
+# Install from source
+git clone https://github.com/soneeee22000/resuforge
+cd resuforge
+pip install -e ".[dev]"
 
 # Set your API key
 export ANTHROPIC_API_KEY=your_key_here
@@ -119,8 +126,8 @@ ResuForge stores config in `~/.resuforge/config.yaml`:
 default_model: claude-3-5-sonnet-20241022
 provider: anthropic
 default_resume: ~/.resuforge/profiles/main.tex
-output_format: tex  # tex | pdf (pdf requires latexmk)
-cover_letter_tone: professional  # professional | conversational
+output_format: tex # tex | pdf (pdf requires latexmk)
+cover_letter_tone: professional # professional | conversational
 ```
 
 ---
@@ -133,7 +140,7 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guideline
 
 ## Roadmap
 
-See [docs/ROADMAP.md](./docs/ROADMAP.md) for the full roadmap.
+See [ROADMAP.md](./ROADMAP.md) for the full roadmap.
 
 ---
 

@@ -1,24 +1,30 @@
 # Roadmap — ResuForge
 
 ## Vision
+
 Build the best open-source resume tailoring tool for technical professionals — starting as a CLI, evolving into a platform.
 
 ---
 
-## v0.1.0 — CLI MVP *(current focus)*
+## v0.1.0 — CLI MVP _(in progress — scaffold complete)_
 
 **Goal:** Core pipeline working end-to-end. Useful for personal use and initial open-source release.
 
 ### Deliverables
-- [ ] Project scaffold (Poetry, pyproject.toml, CI)
+
+- [x] Project scaffold (pyproject.toml, CI, directory structure)
+- [x] IR schema — all Pydantic models (ResumeIR, JDObject, Change, etc.)
+- [x] CLI entrypoint with tailor/config/profile subcommands (stubs)
+- [x] LLM provider abstraction + prompt templates
+- [x] Test framework with smoke tests passing
+- [x] README, PRD, Architecture, Contributing docs
+- [ ] LaTeX resume parser (.tex to JSON IR)
+- [ ] LaTeX renderer (JSON IR to .tex)
 - [ ] JD ingestion from `.txt` and `.pdf`
-- [ ] LaTeX resume parser → JSON IR (supports top 3 resume templates: moderncv, altacv, custom article-based)
 - [ ] Tailoring engine: summary rewrite, skills reorder, bullet rephrase
-- [ ] LaTeX renderer: JSON IR → valid `.tex`
 - [ ] Cover letter generator
-- [ ] CLI: `tailor`, `config` subcommands
+- [ ] Wire up full CLI pipeline
 - [ ] 3 example resume fixtures and 5 JD fixtures for testing
-- [ ] README + quickstart
 
 **Success criteria:** Can tailor a real resume to a real JD in < 30 seconds, output compiles cleanly.
 
@@ -29,6 +35,7 @@ Build the best open-source resume tailoring tool for technical professionals —
 **Goal:** Make it production-worthy for daily use.
 
 ### Deliverables
+
 - [ ] `--diff` flag with colored terminal output showing changes + reasons
 - [ ] `--dry-run` mode
 - [ ] URL JD input (scrape + extract)
@@ -46,6 +53,7 @@ Build the best open-source resume tailoring tool for technical professionals —
 **Goal:** Make ResuForge accessible to non-CLI users.
 
 ### Deliverables
+
 - [ ] FastAPI backend exposing core pipeline as REST API
 - [ ] React frontend: upload resume, paste JD, get tailored output
 - [ ] PDF preview in browser
@@ -60,6 +68,7 @@ Build the best open-source resume tailoring tool for technical professionals —
 **Goal:** Make the tool smarter and more useful over time.
 
 ### Deliverables
+
 - [ ] ATS score estimation (keyword match scoring pre/post tailoring)
 - [ ] Application tracker: log which JDs you applied to, what version of resume
 - [ ] Feedback loop: mark applications as "got interview" / "rejected" to improve tailoring
@@ -69,6 +78,7 @@ Build the best open-source resume tailoring tool for technical professionals —
 ---
 
 ## Future / Community Ideas
+
 - VS Code extension: tailor resume from within editor
 - LinkedIn JD input (scrape from job URL)
 - Resume scoring rubric based on industry-specific criteria
@@ -77,6 +87,7 @@ Build the best open-source resume tailoring tool for technical professionals —
 ---
 
 ## What We Will NOT Build
+
 - Anything that creates or implies false credentials
 - A resume "spinning" tool that makes resumes unreadable to humans
 - A SaaS with resume data stored on our servers (privacy-first, always)

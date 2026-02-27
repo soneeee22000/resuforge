@@ -6,7 +6,7 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [
-    { name = "Pyae Sone", email = "pyaesone@resuforge.dev" },
+    { name = "Pyae Sone Kyaw", email = "pyaesonekyaw101010@gmail.com" },
 ]
 keywords = ["resume", "latex", "job-search", "cli", "llm", "ai", "tailoring"]
 classifiers = [
@@ -47,9 +47,9 @@ dev = [
 resuforge = "resuforge.cli.main:app"
 
 [project.urls]
-Homepage = "https://github.com/pyaesoneaung/resuforge"
-Repository = "https://github.com/pyaesoneaung/resuforge"
-Issues = "https://github.com/pyaesoneaung/resuforge/issues"
+Homepage = "https://github.com/soneeee22000/resuforge"
+Repository = "https://github.com/soneeee22000/resuforge"
+Issues = "https://github.com/soneeee22000/resuforge/issues"
 
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
