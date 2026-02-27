@@ -1,0 +1,63 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Custom commands
+\newcommand{\resumeHeading}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill #4
+}
+\newcommand{\resumeSubheading}[2]{
+    \textbf{#1} \hfill #2
+}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+% ---- Header ----
+\begin{center}
+{\huge \textbf{Alex Chen}} \\[6pt]
+alex.chen@email.com \enspace | \enspace +44-20-1234-5678 \enspace | \enspace London, UK \\
+\href{https://alexchen.dev}{Portfolio} \enspace | \enspace \href{https://github.com/alexchen}{GitHub} \enspace | \enspace \href{https://linkedin.com/in/alexchen}{LinkedIn}
+\end{center}
+
+% ---- Experience ----
+\section*{Work Experience}
+
+\resumeHeading{Staff Software Engineer}{2021 -- Present}{MegaTech Ltd}{London, UK}
+\begin{itemize}[leftmargin=*]
+    \item Architected microservices platform handling 50K requests per second
+    \item Led migration from monolith to event-driven architecture using Kafka
+    \item Reduced cloud infrastructure costs by 35\% through auto-scaling optimization
+\end{itemize}
+
+\resumeHeading{Senior Software Engineer}{2018 -- 2021}{StartupXYZ}{Berlin, Germany}
+\begin{itemize}[leftmargin=*]
+    \item Designed and built real-time data pipeline processing 1TB daily
+    \item Implemented CI/CD pipeline reducing deployment time from 2 hours to 15 minutes
+\end{itemize}
+
+% ---- Skills ----
+\section*{Technical Skills}
+\textbf{Languages:} Go, Python, TypeScript, Java, Rust \\
+\textbf{Infrastructure:} AWS, GCP, Kubernetes, Docker, Terraform \\
+\textbf{Databases:} PostgreSQL, Redis, DynamoDB, Elasticsearch
+
+% ---- Education ----
+\section*{Education}
+
+\resumeHeading{M.Eng. Computer Science}{2016 -- 2018}{Imperial College London}{London, UK}
+
+\resumeHeading{B.Sc. Computer Science}{2013 -- 2016}{University of Edinburgh}{Edinburgh, UK}
+
+% ---- Certifications ----
+\section*{Certifications}
+\begin{itemize}[leftmargin=*]
+    \item AWS Solutions Architect Professional (2023)
+    \item Certified Kubernetes Administrator (2022)
+\end{itemize}
+
+\end{document}

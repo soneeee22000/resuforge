@@ -1,0 +1,32 @@
+Machine Learning Engineer
+
+Company: AI Dynamics
+Location: Remote (US)
+Experience: 3+ years
+
+About Us:
+AI Dynamics is building the next generation of AI-powered products. We need talented ML engineers to push the boundaries of what's possible with machine learning.
+
+Responsibilities:
+- Design, train, and deploy production machine learning models
+- Build and optimize ML pipelines for data processing and feature engineering
+- Collaborate with product teams to identify ML opportunities
+- Conduct experiments and A/B tests to validate model performance
+- Monitor model performance in production and implement retraining pipelines
+
+Required Skills:
+- 3+ years of experience in machine learning engineering
+- Strong proficiency in Python and ML frameworks (PyTorch, TensorFlow)
+- Experience deploying models to production at scale
+- Familiarity with MLOps practices and tools (MLflow, Kubeflow, or similar)
+- Strong understanding of statistical methods and experimental design
+- Experience with NLP, computer vision, or recommendation systems
+
+Preferred Skills:
+- Experience with large language models and transformer architectures
+- Knowledge of distributed training (Horovod, DeepSpeed)
+- Experience with real-time inference optimization (TensorRT, ONNX)
+- Publications in ML conferences (NeurIPS, ICML, ACL)
+
+Education:
+Master's degree in Computer Science, Machine Learning, or related field

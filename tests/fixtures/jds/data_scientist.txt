@@ -1,0 +1,32 @@
+Senior Data Scientist
+
+Company: FinanceAI Corp
+Location: New York, NY
+Experience: 4+ years
+
+About the Role:
+Join our data science team to build predictive models that drive business decisions across our financial products portfolio.
+
+Responsibilities:
+- Develop and maintain predictive models for risk assessment and fraud detection
+- Analyze large datasets to extract actionable business insights
+- Build dashboards and reports for stakeholders
+- Design and run A/B tests to measure product impact
+- Collaborate with engineering teams to deploy models to production
+
+Required Skills:
+- 4+ years of experience in data science or related quantitative role
+- Proficiency in Python (pandas, NumPy, scikit-learn)
+- Strong SQL skills for data extraction and analysis
+- Experience with statistical modeling and hypothesis testing
+- Familiarity with data visualization tools (Matplotlib, Tableau, or similar)
+- Strong communication skills to present findings to non-technical audiences
+
+Preferred Skills:
+- Experience in financial services or fintech
+- Knowledge of deep learning frameworks (PyTorch, TensorFlow)
+- Experience with big data tools (Spark, Hadoop)
+- Familiarity with cloud platforms (AWS, GCP)
+
+Education:
+Master's or PhD in Statistics, Mathematics, Computer Science, or related quantitative field

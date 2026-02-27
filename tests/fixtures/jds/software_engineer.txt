@@ -1,0 +1,33 @@
+Senior Software Engineer - Backend Systems
+
+Company: TechCorp Inc.
+Location: San Francisco, CA (Hybrid)
+Experience: 5+ years
+
+About the Role:
+We are looking for a Senior Software Engineer to join our backend platform team. You will design and build scalable distributed systems that power our core product infrastructure.
+
+Responsibilities:
+- Design and implement high-performance microservices using Go or Python
+- Build and maintain real-time data pipelines processing millions of events per day
+- Collaborate with cross-functional teams to define system architecture
+- Mentor junior engineers and conduct code reviews
+- Drive adoption of best practices in testing, CI/CD, and observability
+
+Required Skills:
+- 5+ years of professional software engineering experience
+- Strong proficiency in Go, Python, or similar backend languages
+- Experience with distributed systems and microservices architecture
+- Proficiency with cloud platforms (AWS, GCP, or Azure)
+- Experience with containerization (Docker, Kubernetes)
+- Strong understanding of SQL and NoSQL databases
+- Excellent communication and collaboration skills
+
+Preferred Skills:
+- Experience with event-driven architectures (Kafka, RabbitMQ)
+- Knowledge of infrastructure-as-code (Terraform, Pulumi)
+- Experience with observability tools (Datadog, Prometheus, Grafana)
+- Contributions to open-source projects
+
+Education:
+Bachelor's degree in Computer Science or equivalent experience
