@@ -1,0 +1,84 @@
+[project]
+name = "resuforge"
+version = "0.1.0"
+description = "Surgically tailor your LaTeX resume to any job description"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Pyae Sone", email = "pyaesone@resuforge.dev" },
+]
+keywords = ["resume", "latex", "job-search", "cli", "llm", "ai", "tailoring"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+]
+dependencies = [
+    "click>=8.1,<9.0",
+    "pydantic>=2.0,<3.0",
+    "instructor>=1.0,<2.0",
+    "anthropic>=0.34,<1.0",
+    "openai>=1.40,<2.0",
+    "pypdf>=4.0,<5.0",
+    "httpx>=0.27,<1.0",
+    "trafilatura>=1.12,<2.0",
+    "jinja2>=3.1,<4.0",
+    "rich>=13.0,<14.0",
+    "pyyaml>=6.0,<7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<9.0",
+    "pytest-asyncio>=0.23,<1.0",
+    "pytest-cov>=5.0,<6.0",
+    "black>=24.0",
+    "ruff>=0.5",
+    "mypy>=1.10",
+]
+
+[project.scripts]
+resuforge = "resuforge.cli.main:app"
+
+[project.urls]
+Homepage = "https://github.com/pyaesoneaung/resuforge"
+Repository = "https://github.com/pyaesoneaung/resuforge"
+Issues = "https://github.com/pyaesoneaung/resuforge/issues"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["resuforge*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: marks tests that make real LLM API calls (deselect with '-m not integration')",
+    "slow: marks slow tests (deselect with '-m not slow')",
+]
+addopts = "-v --tb=short"
