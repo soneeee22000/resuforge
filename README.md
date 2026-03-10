@@ -2,6 +2,10 @@
 
 > Surgically tailor your LaTeX resume to any job description — in seconds.
 
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)](https://www.latex-project.org/)
+
 ResuForge is an open-source CLI tool that ingests a job description and your LaTeX resume, makes **targeted, intelligent edits** to fit the role, and generates a **grounded cover letter** — all without hallucinating fake experience.
 
 Built for engineers, researchers, and anyone who uses LaTeX and is tired of manually tweaking their resume for every application.
