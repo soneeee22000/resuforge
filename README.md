@@ -5,6 +5,8 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)](https://www.latex-project.org/)
+[![Status](https://img.shields.io/badge/Status-In_Development-orange?style=flat-square)](https://github.com/soneeee22000/resuforge)
+[![CLI](https://img.shields.io/badge/Interface-CLI-lightgrey?style=flat-square&logo=gnubash&logoColor=white)](https://github.com/soneeee22000/resuforge)
 
 ResuForge is an open-source CLI tool that ingests a job description and your LaTeX resume, makes **targeted, intelligent edits** to fit the role, and generates a **grounded cover letter** — all without hallucinating fake experience.
 
